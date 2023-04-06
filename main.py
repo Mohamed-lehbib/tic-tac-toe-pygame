@@ -11,7 +11,7 @@ pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Tic Tac Toe")
 
-BG = pygame.image.load("assets/green.png")
+BG = pygame.image.load("asset/green.png")
 
 class Board:
 
@@ -217,7 +217,7 @@ class Game:
 
 
 def get_font(size): # Returns Press-Start-2P in the desired size
-    return pygame.font.Font("assets/font.ttf", size)
+    return pygame.font.Font("asset/font.ttf", size)
 
 def pvp():
     #objet Game
@@ -364,11 +364,11 @@ def main_menu():
         MENU_TEXT = get_font(50).render("Play", True, "#EFE7C8")
         MENU_RECT = MENU_TEXT.get_rect(center=(360, 100))
 
-        PVP_BUTTON = Button(image=pygame.image.load("assets/Play Rect.png"), pos=(360, 250), 
+        PVP_BUTTON = Button(image=pygame.image.load("asset/Play Rect.png"), pos=(360, 250), 
                             text_input="PvP", font=get_font(50), base_color="#000000", hovering_color="White")
-        PvAI_BUTTON = Button(image=pygame.image.load("assets/Play Rect.png"), pos=(360, 400), 
+        PvAI_BUTTON = Button(image=pygame.image.load("asset/Play Rect.png"), pos=(360, 400), 
                             text_input="PvAI", font=get_font(50), base_color="#000000", hovering_color="White")
-        PvAI2_BUTTON = Button(image=pygame.image.load("assets/Play Rect.png"), pos=(360, 550), 
+        PvAI2_BUTTON = Button(image=pygame.image.load("asset/Play Rect.png"), pos=(360, 550), 
                             text_input="PvGame", font=get_font(50), base_color="#000000", hovering_color="White")
 
         screen.blit(MENU_TEXT, MENU_RECT)
