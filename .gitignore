@@ -1,4 +1,7 @@
-#Ignore Mac System files
+# Ignore Mac System files
 .DS_Store
 
 __pycache__
+
+# Ignoring .env
+env/
